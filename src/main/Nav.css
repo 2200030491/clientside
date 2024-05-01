@@ -1,0 +1,218 @@
+/* NavBar Styling */
+.navbar {
+    background-color: #007bff; /* Blue theme */
+    padding: 0.8rem 2rem; /* Padding around the navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  
+  .navbar-nav {
+    list-style: none; /* Removes bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns the items horizontally */
+  }
+  
+  .nav-item {
+    margin-left: 20px; /* Space between items */
+  }
+  
+  .nav-link {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Removes underline */
+    padding: 0.5rem 0; /* Padding for clickable area */
+    display: block; /* Makes the padding effective */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #ffd700; /* Golden color for hover and active state */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack links vertically on small screens */
+    }
+  
+    .nav-item {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .nav-link {
+      text-align: center; /* Center align the links */
+    }
+  }
+  /* Enhancing hero image responsiveness */
+.hero-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust based on desired maximum size */
+    height: auto;
+  }
+  
+  /* Responsive settings for feature images */
+  .feature-item img {
+    width: 100%;
+    max-width: 80px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive design tweaks */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-text,
+    .hero-image {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* General page styling */
+.homepage {
+    font-family: Arial, sans-serif; /* Ensures font consistency */
+  }
+  
+  /* Styling for the header */
+  header h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+  }
+  
+  /* Hero section styling */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 400px; /* Limits image size */
+    height: auto;
+  }
+  
+  /* Buttons styling */
+  .btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  /* Features section styling using CSS Grid */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .feature-item img {
+    width: 80px; /* Fixed width for consistency */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    color: #666;
+  }
+  /* style.css */
+
+/* Container Styles */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading Styles */
+  .contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
